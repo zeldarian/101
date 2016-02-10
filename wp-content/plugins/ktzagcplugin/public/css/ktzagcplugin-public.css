@@ -1,0 +1,29 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ * Use ktzplg- for prevent conflict with other css ktzplg is kentooz plugin code
+ */
+ 
+img{max-width:100%}
+
+h3.ktzplg-title-related {margin-bottom:10px;}
+
+ul.ktzplg-list-agcplugin,
+ul.ktzplg-list-image-agcplugin {list-style:none;clear:both;margin-bottom:20px;}
+
+ul.ktzplg-list-agcplugin li {list-style:none;padding-left:0;margin-left:0px;}
+
+/* List Image Related */
+ul.ktzplg-list-image-agcplugin {clear:both;position:relative;padding:0;margin:0 -5px 20px -5px;font-size:0;}
+ul.ktzplg-list-image-agcplugin li{display:inline-block;width:25%;margin:0;padding:0;}
+ul.ktzplg-list-image-agcplugin li a{display:block;margin:5px;}
+ul.ktzplg-list-image-agcplugin li img{width:100%;}
+
+/* Responsive Video */
+.ktzplg-responsive-video {position: relative;padding-bottom: 56.25%; /* 16:9 */padding-top: 25px;height: 0;}
+.ktzplg-responsive-video iframe {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+/* Responsive CSS */
+@media only screen and (max-width: 480px) {
+	ul.ktzplg-list-image-agcplugin li{	width:50%;}
+}

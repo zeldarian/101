@@ -1,0 +1,44 @@
+<div style='font-size: 12px; text-align: justify;'>
+{% api %}{% image %}{% video %}
+
+{% for index, item in api %}{% if index > 3 %}{% if index < 5 %}
+<div style="text-align: justify;">
+<strong>{{term}}</strong>{% endif %}{% endif %}{% endfor %} -
+{% for index, item in api %}
+{% if index > 6 %}
+{{item.title | remove '...' | trim | strtolower | ucfirst | remove_common_words }}, {{item.description | remove '...' | trim | strtolower | ucfirst }}.
+{% endif %}
+{% endfor %}
+</div>
+
+<div style="text-align:center">
+{% for index, item in images %}{% if index > 1 %}{% if index < 3 %}
+<img width=100% src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}">
+<br>
+<caption>{{ item.title | ucfirst }}</caption>
+{% endif %}{% endif %}{% endfor %}
+</div>
+
+{% for index, item in api %}{% if index > 3 %}{% if index < 5 %}
+<h2 class="title front-view-title" itemprop="headline">Most Popular of {{term | remove '...' | remove 'amazon' | remove '.' | remove 'com' | remove ':' | remove ',' | trim | strtolower | ucfirst }}{% endif %}{% endif %}{% endfor %}</h2>
+
+{% api %}
+{% for index, item in api %}{% if index > 2 %}{% if index < 18 %}
+ 
+<div class="textwidget"><div style="display:block;height:12px;border-bottom:1px solid #DDD;"></div>
+<div style="display:block;height:2px;"></div>
+
+<img align="left" width="120px" style="margin:0 8px 8px 0" src="http://api.pagepeeker.com/v2/thumbs.php?size=m&url={{ item.link | host }}"/>
+
+<strong><a href="{{ item.title | build_permalink_for "tag"  }}">{{item.title | remove '...' | remove 'amazon' | remove '.' | remove 'com' | remove ':' | trim | strtolower | ucfirst }}</a></strong></<br />
+<br />
+{{item.description | remove '...' | trim | strtolower | ucfirst }}.<br />
+<center><a target="_blank" href="http://blog.rachaeledwards.com?q={{ item.title | urlencode }}">Download Here</a></center>
+</div>
+
+<br />
+ 
+{% endif %}{% endif %}
+{% endfor %}
+
+</div>

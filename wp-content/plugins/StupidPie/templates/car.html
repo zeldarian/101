@@ -1,0 +1,58 @@
+<div class="entry">
+<div class="posted-single">
+{% api %}{% image %}{% video %}
+<article class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="post-format-single standard"></div>
+<div class="entry-wrap">
+<div class="entry-content">
+
+{% for index, item in api %}{% if index > 3 %}{% if index < 5 %}
+
+<strong>{{ term }}</strong>{% endif %}{% endif %}{% endfor %} -
+{% for index, item in api %}
+{% if index > 6 %}
+{{item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}, {{item.description | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst }}.
+{% endif %}
+{% endfor %}
+</div>
+
+</br>
+{% for index, item in images %}{% if index > 0 %}{% if index < 2 %}<img src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}" hspace="2" align="left" width=100% height=100% /></a>
+<center><strong>{{ item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | remove '1' | remove '2' | remove '3' | remove '4' | remove '5' | remove '6' | remove '7' | remove '8' | remove '9' | remove '0' | remove 'x' | remove '&amp' | trim | strtolower | ucfirst }}</strong>{% endif %}{% endif %}{% endfor %}</center>
+</br>
+<div style="text-align: justify;">
+{% for index, item in api %}{% if index > 0 %}{% if index < 5 %}{{item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}, {{item.description | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst }}.{% endif %}{% endif %}{% endfor %}
+</div>
+</br>
+
+
+<p>
+{% for index, item in images %}{% if index > 3 %}{% if index < 5 %}<img src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}" hspace="2" align="left" width=100% height=100% /></a>
+<center><strong>{{ item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | remove '1' | remove '2' | remove '3' | remove '4' | remove '5' | remove '6' | remove '7' | remove '8' | remove '9' | remove '0' | remove 'x' | remove '&amp' | trim | strtolower | ucfirst }}</strong>{% endif %}{% endif %}{% endfor %}</center>
+</br>
+<div style="text-align: justify;">
+{% for index, item in api %}{% if index > 5 %}{% if index < 8 %}{{item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}, {{item.description | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst }}.{% endif %}{% endif %}{% endfor %}
+</div>
+</br>
+
+    <h2>Related image with {{ term }}</h2>
+    <div id="gallery-2" class="gallery galleryid-405 gallery-columns-4 gallery-size-thumbnail">
+    {% for index, item in images %}
+    <dl class="gallery-item">
+    {% if index < 15 %}
+    				<dt class="gallery-icon landscape">
+    				<a href="{{ item.title | build_permalink_for 'tag' }}" ><img style="width:150px;height:130px" src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}"></a>
+                        </dt>			
+    				{% endif %}</dl>		
+    {% endfor %}</div>
+
+</div></div>
+</article>
+</div>
+    <style type="text/css">
+    dt {
+    float: left;
+    width: 20%;
+    }
+    </style>

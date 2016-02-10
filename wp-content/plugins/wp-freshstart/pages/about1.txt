@@ -1,0 +1,11 @@
+Welcome to our site! Thank you for visiting.
+
+The primary purpose of this site is to share our knowledge about [field1].
+
+Not only that, but [field2] as well.
+
+This site was really built with you in mind and we hope you will find it useful.
+
+Your comments or questions are of course welcome.
+
+Thanks!

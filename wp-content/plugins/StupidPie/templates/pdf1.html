@@ -1,0 +1,24 @@
+    {% api %}{% image %}{% video %}	
+    <article class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+    	<div class="post-format-single standard"></div>
+    	<div class="entry-wrap">
+    		<div class="entry-content">
+    <h2>Related image with {{ term }}</h2>
+    <div id="gallery-2" class="gallery galleryid-405 gallery-columns-4 gallery-size-thumbnail">
+    {% for index, item in images %}
+    <dl class="gallery-item">
+    {% if index < 15 %}
+    				<dt class="gallery-icon landscape">
+    				<a href="{{ item.title | build_permalink_for 'tag' }}" ><img style="width:150px;height:130px" src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}"></a>
+                        </dt>			
+    				{% endif %}</dl>		
+    {% endfor %}</div>
+    </div>
+    	</div>
+    </article>
+    <style type="text/css">
+    dt {
+    float: left;
+    width: 20%;
+    }
+    </style>

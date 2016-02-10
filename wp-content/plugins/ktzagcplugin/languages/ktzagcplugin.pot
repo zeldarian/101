@@ -1,0 +1,373 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ktzunyporto v.1.0.0\n"
+"POT-Creation-Date: 2015-07-15 02:43+0700\n"
+"PO-Revision-Date: 2015-05-28 04:49+0700\n"
+"Last-Translator: \n"
+"Language-Team: Gian MR <g14nblog@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-ktzagcplugin-admin.php:103
+msgid "Ktzagcplugin Settings"
+msgstr ""
+
+#: admin/class-ktzagcplugin-admin.php:104
+msgid "Ktzagcplugin"
+msgstr ""
+
+#: admin/class-ktzagcplugin-admin.php:147
+msgid "Settings"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-callback-helper.php:90
+#, php-format
+msgid "The callback function used for <strong>%s</strong> setting is missing."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-callback-helper.php:142
+#, php-format
+msgid "Options for <strong>%s</strong> multicheck is missing."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-callback-helper.php:185
+#, php-format
+msgid "Options for <strong>%s</strong> radio is missing."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-callback-helper.php:428
+msgid "Upload File"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-sanitization-helper.php:129
+msgid "Settings updated."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:81
+msgid "General Settings"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:82
+#: admin/settings/class-ktzagcplugin-settings-definition.php:158
+msgid "Documentation"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:102
+msgid "Active auto post"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:103
+msgid "If you want auto post agc results, please check this option, leave blank if you want only AGC. If you check this option, every visitor visit your single AGC, title and content will automatic save in your database. Make sure you have a lot of space for this. :D"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:107
+msgid "Auto post (Category)"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:108
+msgid "If you activated auto post featured, please select this category, all auto post will place in this category."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:109
+msgid "1"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:113
+msgid "Auto post (Status)"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:114
+msgid "If you activated auto post featured, please select this post status, all auto post will place in this status."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:116
+msgid "Draft"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:117
+msgid "Publish"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:119
+msgid "publish"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:123
+msgid "Badword"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:124
+msgid "Fill with badword, this word will delete from agc. Please use plugin redirection if you want redirect some URL. Please separate by comma for add other badword, example: keyword1, keyword2, keyword3, dll."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:125
+msgid "http:,cache:,site:,utm_source,sex,porn,gamble,xxx,nude,squirt,gay,abortion,attack,bomb,casino,cocaine,die,death,erection,gambling,heroin,marijuana,masturbation,pedophile,penis,poker,pussy,terrorist,anal,anus,anal,anus,group sex,guro,hand job,handjob,hard core,hardcore,motherfucker,nipples,orgasm,phone sex,rape,raping,xxx,zoophilia,memek,bugil,telanjang,porno,porns,pecun,pelacur,wts"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:129
+msgid "Keyword"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:130
+msgid "Fill with keyword, this keyword will display random in widget random keyword. This will display random in that widget, if our system detect search term from search engine just like stt2 this random keyword will add new keyword, so do not worry if have new keyword in that widget. Please add keyword per line for example:<br />Keyword 1<br />Keyword 2<br />Keyword 3"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:134
+msgid "AGC content(Single)"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:135
+msgid "This content support shortcode, you can add shortcode from AGC Plugin, please read documentation about AGC plugin shortcode. Form more information if you bought our premium plugin, this format post will same with auto post use that campaign."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:136
+msgid "[ktzagcplugin_image]<br />[ktzagcplugin_text number=\"4\"]<br />[ktzagcplugin_video]<br />[ktzagcplugin_text source=\"ask\" number=\"4\"]"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:140
+msgid "AGC in Search Results"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:141
+msgid "Please choice AGC search results, disable it, source from google, bing or ask. If you disable this option, search results in page search will only display from your content, if you enable choice google, bing or ask, search results will generate from that search engine. Better way if you enable it, so your website, will have a lot of keyword index in search engine. Default is from google."
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:143
+msgid "Disable"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:144
+msgid "Search Results Generate From <b>Google</b>"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:145
+msgid "Search Results Generate From <b>Bing</b>"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:146
+msgid "Search Results Generate From <b>Ask</b>"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:151
+msgid "Proxy"
+msgstr ""
+
+#: admin/settings/class-ktzagcplugin-settings-definition.php:152
+msgid "With some reason maybe you need proxy for grab AGC, you can fill here with format: IPproxy:port for example: 127.0.0.0:80"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:89
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:91
+msgid "Bulk Posters Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:90
+msgid "Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:92
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:96
+msgid "New Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:93
+msgid "Add New Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:94
+msgid "Edit"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:95
+msgid "Edit Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:97
+msgid "No Campaigns found"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:98
+msgid "No Campaigns found in trash"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:99
+msgid "Parent Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:100
+msgid "Search Campaigns"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:101
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:102
+msgid "View Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:103
+msgid "Campaigns"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:106
+msgid "Ktzagcplugin Bulk Posters"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:174
+msgid "Bulk Keyword Poster"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:193
+msgid "Enter Name of Campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:235
+msgid "Keywords:"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:240
+msgid "Fill with keyword, this keyword will automatic post with schedule post setting below. Please add keyword per line for example:<br>Keyword 1<br>Keyword 2<br>Keyword 3"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:251
+msgid "Post Type:"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:259
+msgid "Please select post type here, you can post in post_type post or page."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:270
+msgid "Count:"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:275
+msgid "How much post you want posted immediately after publish this campaign"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:286
+msgid "Category:"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:296
+msgid "Please select post category for this campaign."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:307
+msgid "Post status:"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:315
+msgid "Please select post status here, you can publish post or save post as draft."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:330
+msgid "Schedule Auto Posting:"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:338
+msgid "Please fill time or time range between each auto post check. "
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:470
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:473
+msgid "Campaign updated."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:471
+msgid "Custom field updated."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:472
+msgid "Custom field deleted."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:474
+#, php-format
+msgid "Campaign restored to revision from %s"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:475
+msgid "Campaign published."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:476
+msgid "Campaign saved."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:477
+msgid "Campaign submitted."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:478
+#, php-format
+msgid "Campaign scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:478
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: bulk-poster/class-ktzagcplugin-bulk-poster.php:479
+msgid "Campaign draft updated."
+msgstr ""
+
+#: modules/ktzagcplugin-module-article.php:80
+#: modules/ktzagcplugin-module-article.php:190
+#: modules/ktzagcplugin-module-article.php:300
+#: modules/ktzagcplugin-module-article.php:387
+msgid "Related posts to "
+msgstr ""
+
+#: modules/ktzagcplugin-module-article.php:96
+#: modules/ktzagcplugin-module-article.php:206
+#: modules/ktzagcplugin-module-article.php:316
+#: modules/ktzagcplugin-module-article.php:401
+#: modules/ktzagcplugin-module-image.php:110
+#: modules/ktzagcplugin-module-image.php:247
+msgid "Permalink to "
+msgstr ""
+
+#: modules/ktzagcplugin-module-image.php:94
+#: modules/ktzagcplugin-module-image.php:231
+msgid "Related images to "
+msgstr ""
+
+#: widget/google-trend-widget.php:13
+msgid "Add Google Trend for AGC Plugin"
+msgstr ""
+
+#: widget/google-trend-widget.php:14
+msgid "KTZPLG Google Trend"
+msgstr ""
+
+#: widget/google-trend-widget.php:56 widget/random-term-widget.php:53
+msgid "Title:"
+msgstr ""
+
+#: widget/google-trend-widget.php:62
+msgid "Country:"
+msgstr ""
+
+#: widget/google-trend-widget.php:114
+msgid "Number of Google Trend:"
+msgstr ""
+
+#: widget/random-term-widget.php:13
+msgid "Add Random Term for AGC Plugin, for keyword you can setting di Ktzagcplugin -> General Setting"
+msgstr ""
+
+#: widget/random-term-widget.php:14
+msgid "KTZPLG Random Term"
+msgstr ""
+
+#: widget/random-term-widget.php:58
+msgid "Number of random terms:"
+msgstr ""

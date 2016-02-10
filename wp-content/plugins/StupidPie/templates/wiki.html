@@ -1,0 +1,67 @@
+<div class="entry">
+<div class="posted-single">
+{% api %}{% image %}{% video %}
+<article class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+
+<div class="post-format-single standard"></div>
+<div class="entry-wrap">
+<div class="entry-content">
+
+<strong>{{term}}</strong> - 
+{% for index, item in api %}
+{% if index > 7 %}
+{{item.description | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}.
+{% endif %}
+{% endfor %}
+</div>
+
+<h2>{{ term }}</h2>
+</br>
+{% for index, item in images %}{% if index > 0 %}{% if index < 2 %}<a target="blank" href="{{ item.mediaurl }}"> <img src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}" hspace="2" align="left" width=100% height=100% /></a>
+<center><caption><strong>{{ item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}</strong></caption>{% endif %}{% endif %}{% endfor %}</center>
+</br>
+<div style="border-color: #F6F4F4; margin-bottom: -10px; padding: 10px 0px 10px 0px; text-align: justify;">
+{% for index, item in api %}{% if index > 0 %}{% if index < 3 %}{{item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}, {{item.description | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst }}.{% endif %}{% endif %}{% endfor %}
+</div>
+</br>
+
+<p>
+{% for index, item in images %}{% if index > 3 %}{% if index < 5 %}<a target="blank" href="{{ item.mediaurl }}"> <img src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}" hspace="2" align="left" width=100% height=100% /></a>
+<center><caption><strong>{{ item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}</strong></caption>{% endif %}{% endif %}{% endfor %}</center>
+</br>
+<div style="border-color: #F6F4F4; margin-bottom: -10px; padding: 10px 0px 10px 0px; text-align: justify;">
+{% for index, item in api %}{% if index > 5 %}{% if index < 8 %}{{item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}, {{item.description | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst }}.{% endif %}{% endif %}{% endfor %}
+</div>
+</br>
+<h2>{{ item.title }}</h2>
+<p>
+{% for index, item in images %}{% if index > 6 %}{% if index < 8 %}<a target="blank" href="{{ item.mediaurl }}"> <img src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}" hspace="2" align="left" width=100% height=100% /></a>
+<center><caption><strong>{{ item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}</strong></caption>{% endif %}{% endif %}{% endfor %}</center>
+</br>
+{% for index, item in api %}{% if index > 8 %}{% if index < 10 %}{{item.title | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst | remove_common_words }}, {{item.description | remove '...' | remove '-' | remove '*' | remove '_' | remove '?' | remove '|' | remove '@' | remove ',' | remove 'Incoming Search Term' | remove ';' | trim | strtolower | ucfirst }}.{% endif %}{% endif %}{% endfor %}
+</p>
+
+<center><h2>{{ term }} Related Image</h2></center>
+    <div id="gallery-2" class="gallery galleryid-405 gallery-columns-4 gallery-size-thumbnail">
+    {% for index, item in images %}
+    <dl class="gallery-item">
+    {% if index < 5 %}
+    				<dt class="gallery-icon landscape">
+    				<a href="{{ item.title | build_permalink_for 'tag' }}" ><img style="width:140px;height:130px" src="{{ item.mediaurl }}" alt="{{ item.title }}" title="{{ item.title }}"></a>
+
+                        </dt>			
+    				{% endif %}</dl>		
+    {% endfor %}</div>
+
+
+</div>
+</div>
+
+</article>
+
+    <style type="text/css">
+    dt {
+    float: left;
+    width: 20%;
+    }
+    </style>

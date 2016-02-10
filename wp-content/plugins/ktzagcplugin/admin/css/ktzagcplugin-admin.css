@@ -1,0 +1,8 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+textarea.ktzplg-textarea-admin {
+    width:100%;
+}

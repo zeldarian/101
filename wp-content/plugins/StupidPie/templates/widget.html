@@ -1,0 +1,5 @@
+<ul>
+{% for index, term in terms %}
+<li style="background-color: {% cycle '#9b59b6', '#8e44ad', '#2980b9', '#2c3e50', '#16a085', '#1abc9c', '#34495e', '#e67e22', '#f1c40f', '#9b59b6' %}; padding:5px;"><a style="color:white; text-decoration:none;" href="{{ term | build_permalink_for 'tag' }}">{{ term }}</a></li>
+{% endfor%}
+</ul>

@@ -1,0 +1,24 @@
+<div style='font-size: 12px; text-align: justify;'>
+
+{% api %}
+{% for index, item in api %}{% if index > 2 %}{% if index < 11 %}
+ 
+<div class="textwidget"><div style="display:block;height:12px;border-bottom:1px solid #DDD;"></div>
+<div style="display:block;height:2px;"></div>
+
+<img align="left" width="120px" style="margin:0 8px 8px 0" src="http://api.pagepeeker.com/v2/thumbs.php?size=m&url={{ item.link | host }}"/>
+
+<a href="/{{ item.title | hyphenize }}" target="_blank"><strong>{{item.title  | remove '...' | trim | strtolower | ucfirst }}</strong></a><br />
+<br />
+{{item.description | remove '...' | trim | strtolower | ucfirst }}.<br />
+<br />
+<strong>PDF File Name:</strong> {{item.title  | remove '...' | trim | strtolower | ucfirst }}<br />
+<strong>Source:</strong> {{ item.link | host }}</span>   <a target="_blank" rel="nofollow" href="{{ item.link }}"><b><font style="color: #fff;"><blink> » </blink></font> <font style="color: #F88818;" size="1">DOWNLOAD</font> <font style="color: #fff;"><blink> « </blink></font></b></a>
+</div>
+
+<br />
+ 
+{% endif %}{% endif %}
+{% endfor %}
+
+</div>
