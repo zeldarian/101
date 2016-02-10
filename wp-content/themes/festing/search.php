@@ -61,13 +61,13 @@ echo spp($keyword, $template, $hack);
 		<?php if ( have_posts() ) : 
 		while ( have_posts() ) : the_post();
 			if ( ot_get_option('ktz_content_layout') == 'layout_blog' ) :
-			get_template_part( 'content', 'mini' );
+			//get_template_part( 'content', 'mini' );
 			else :
-			get_template_part( 'content', get_post_format() );
+			//get_template_part( 'content', get_post_format() );
 			endif;
 		endwhile; ?>
 		<nav id="nav-index">
-			<?php ktz_navigation(); ?>
+			<?php //ktz_navigation(); ?>
 		</nav>
 		<?php else : $termstring = $s;
 		if (ot_get_option('ktz_agc_activated') == "yes") {
