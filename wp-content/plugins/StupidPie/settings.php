@@ -29,4 +29,4 @@ $spp_settings->country_targeting = array();
 $spp_settings->bad_urls = array('youporn.com', 'facebook.com');
 
 // this words will be automatically removed, and if the title contains these words, it will return 404 not found
-$spp_settings->bad_words = 'Saathiya Bin Tere Dil Mane Na,Saathiya, Bin Tere, Dil Mane Na,Jab kabhi,kabhi,Hai Ishq Ye Kya Ek Khata,Hai Ishq,Ye Kya,Ek Khata,chamiya,dulhan hum,le jaayenge';
+$spp_settings->bad_words = 'Saathiya';
